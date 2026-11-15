@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090d1c" />
+  <meta name="description" content="Бір мұра – бірнеше халық. Түркі халықтарының ортақ мәдени мұрасын зерттейтін интерактивті 3D музей." />
+  <title>Бір мұра – бірнеше халық | Digital Museum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Bir Mura home">
+      <span class="brand-mark">✧</span><span><b>BIR MURA</b><small> DIGITAL HERITAGE MUSEUM</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#journey" data-i18n="navJourney">Жібек жолы</a>
+      <a href="#symbols" data-i18n="navSymbols">Таңбалар</a>
+      <a href="#heritage" data-i18n="navHeritage">Мұралар</a>
+      <a href="#about" data-i18n="navAbout">Жоба туралы</a>
+    </nav>
+    <div class="top-actions">
+      <div class="language-switch" aria-label="Language">
+        <button class="lang active" data-lang="kk">ҚАЗ</button>
+        <button class="lang" data-lang="ru">РУС</button>
+        <button class="lang" data-lang="en">ENG</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="eyebrow">ИНТЕРАКТИВТІ ЦИФРЛЫҚ МУЗЕЙ</span></div>
+        <h1 data-i18n="heroTitle">Бір мұра –<br><em>бірнеше халық.</em></h1>
+        <p class="hero-lead" data-i18n="heroLead">Түркі халықтарын біріктіретін таңбалар, дәстүрлер мен Ұлы Жібек жолының мәдени ізіне саяхат.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#journey"><span data-i18n="explore">Зерттеуді бастау</span><span>↗</span></a>
+          <a class="button button-quiet" href="#symbols" data-i18n="discoverSymbols">Таңбалар үндестігі</a>
+        </div>
+        <div class="hero-note"><span class="pulse-dot"></span><span data-i18n="heroNote">Мәдениеттер тоғысқан кеңістік</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-medallion"><span class="medallion-top">✧</span><span class="medallion-symbol">❋</span><span class="medallion-bottom">BIR MURA · 01</span></div>
+        <div class="floating-tag tag-top"><span>✦</span><span data-i18n="tagShared">ОРТАҚ ТАМЫР</span></div>
+        <div class="floating-tag tag-bottom"><span>⌁</span><span data-i18n="tagLegacy">МӘДЕНИ МҰРА</span></div>
+        <div class="art-caption">TURKIC HERITAGE / SILK ROAD</div>
+      </div>
+    </section>
+
+    <section class="stats section-wrap">
+      <div class="stat"><b>06</b><span data-i18n="statCountries">Түркі елі</span></div>
+      <div class="stat"><b>01</b><span data-i18n="statHeritage">Ортақ мәдени кеңістік</span></div>
+      <div class="stat"><b>∞</b><span data-i18n="statStories">Ұрпақтан ұрпаққа жалғасқан тарих</span></div>
+    </section>
+
+    <section class="section-wrap journey-section" id="journey">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="chapterOne">01 / ТАРИХИ БАЙЛАНЫС</span></div>
+          <h2 data-i18n="journeyTitle">Ұлы Жібек жолы</h2></div>
+        <p data-i18n="journeyLead">Шығыс пен Батысты байланыстырған сауда жолы ғана емес, білім, өнер және мәдениет алмасқан өркениет көпірі.</p>
+      </div>
+      <div class="map-shell">
+        <div class="map-topline"><span><i class="live-indicator"></i><span data-i18n="mapLive">ИНТЕРАКТИВТІ 3D КАРТА</span></span><span class="map-coords">38° N · 68° E</span></div>
+        <div id="silkMap" class="silk-map" aria-label="Interactive 3D Silk Road map">
+          <div class="map-loading" id="mapLoading"><span class="loader"></span><span data-i18n="loading3d">3D карта жүктелуде...</span></div>
+          <div class="map-hint" data-i18n="mapHint">Картаны айналдыру үшін сүйреңіз · Үлкейту үшін scroll</div>
+        </div>
+        <div class="map-bottom">
+          <div><span class="legend-line"></span><span data-i18n="routeLegend">Ұлы Жібек жолының негізгі бағыты</span></div>
+          <span data-i18n="mapDisclaimer">Схемалық тарихи визуализация</span>
+        </div>
+      </div>
+      <div class="city-strip" id="cityStrip">
+        <button class="city-chip active" data-city="istanbul">Стамбул</button>
+        <button class="city-chip" data-city="samarkand">Самарқанд</button>
+        <button class="city-chip" data-city="taraz">Тараз</button>
+        <button class="city-chip" data-city="turkistan">Түркістан</button>
+        <button class="city-chip" data-city="otrar">Отырар</button>
+        <button class="city-chip" data-city="kashgar">Қашғар</button>
+      </div>
+      <div class="city-info" id="cityInfo"><span class="city-info-icon">✧</span><div><b id="cityName">Стамбул</b><p id="cityDescription">Еуропа мен Азияны жалғаған тарихи торап.</p></div><span class="city-info-kicker">SILK ROAD NODE</span></div>
+    </section>
+
+    <section class="section-wrap symbols-section" id="symbols">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="chapterTwo">02 / ТАҢБАЛАР МЕН БЕЛГІЛЕР</span></div>
+          <h2 data-i18n="symbolsTitle">Таңбалар үндестігі</h2></div>
+        <p data-i18n="symbolsLead">Әр халықтың өзіндік белгісі бар. Кейбір геометриялық пішіндер мен ою мотивтері ортақ тарихи және көркемдік байланыстарды көрсетеді.</p>
+      </div>
+      <div class="symbol-layout">
+        <div class="symbol-feature">
+          <div class="symbol-feature-head"><span data-i18n="compareLabel">ОРТАҚ МОТИВТЕРДІ САЛЫСТЫРУ</span><span>✳</span></div>
+          <div class="symbol-big">✺</div>
+          <h3 data-i18n="symbolFeatureTitle">Өрнек – ұрпақ жады</h3>
+          <p data-i18n="symbolFeatureText">Қошқармүйіз, ирек су, күн және өсімдік тектес өрнектер тұрмыстық бұйымдарда, киімде және сәулетте кездеседі.</p>
+          <span class="feature-index">MOTIF STUDY / 01</span>
+        </div>
+        <div class="symbol-grid">
+          <article class="symbol-card"><span class="symbol-glyph">𐰴</span><div><b data-i18n="kazakh">Қазақ</b><small data-i18n="kazakhMotif">Таңба және қошқармүйіз өрнегі</small></div><span class="symbol-arrow">↗</span></article>
+          <article class="symbol-card"><span class="symbol-glyph">☼</span><div><b data-i18n="kyrgyz">Қырғыз</b><small data-i18n="kyrgyzMotif">Күн бейнесі және шырдак өрнегі</small></div><span class="symbol-arrow">↗</span></article>
+          <article class="symbol-card"><span class="symbol-glyph">❖</span><div><b data-i18n="uzbek">Өзбек</b><small data-i18n="uzbekMotif">Геометриялық және өсімдік оюлары</small></div><span class="symbol-arrow">↗</span></article>
+          <article class="symbol-card"><span class="symbol-glyph">✥</span><div><b data-i18n="turkish">Түрік</b><small data-i18n="turkishMotif">Кілем өрнектері мен дәстүрлі нақыш</small></div><span class="symbol-arrow">↗</span></article>
+          <article class="symbol-card"><span class="symbol-glyph">✣</span><div><b data-i18n="azerbaijani">Әзербайжан</b><small data-i18n="azerbaijaniMotif">Кілем тоқуындағы қайталанатын мотивтер</small></div><span class="symbol-arrow">↗</span></article>
+          <article class="symbol-card"><span class="symbol-glyph">❋</span><div><b data-i18n="turkmen">Түрікмен</b><small data-i18n="turkmenMotif">Гүл өрнегі және кілем таңбалары</small></div><span class="symbol-arrow">↗</span></article>
+        </div>
+      </div>
+      <p class="small-note" data-i18n="symbolNote">Ескерту: көрсетілген белгілер – көркемдік салыстыруға арналған шартты графикалық мотивтер; олар ресми мемлекеттік таңбалар немесе бірдей мағынадағы тарихи таңбалар ретінде берілмейді.</p>
+    </section>
+
+    <section class="heritage-section" id="heritage">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="chapterThree">03 / ОРТАҚ МҰРА</span></div>
+            <h2 data-i18n="heritageTitle">Мәдениеттер тоғысы</h2></div>
+          <p data-i18n="heritageLead">Ұқсастықтар мен айырмашылықтарды танып, әр халықтың бірегей мұрасын құрметтеу.</p>
+        </div>
+        <div class="heritage-cards">
+          <article class="heritage-card heritage-card-large"><div class="heritage-art art-yurt">⌂</div><div class="heritage-content"><span>01 / NOMADIC LIFE</span><h3 data-i18n="yurtTitle">Киіз үй мәдениеті</h3><p data-i18n="yurtText">Көшпелі өмір салтына бейімделген баспана – кеңістік, отбасы және табиғатпен үйлесімнің белгісі.</p></div></article>
+          <article class="heritage-card"><div class="heritage-art art-pattern">✺</div><div class="heritage-content"><span>02 / CRAFT</span><h3 data-i18n="craftTitle">Ою-өрнек және қолөнер</h3><p data-i18n="craftText">Кілем, киіз, кесте және зергерлік өнердегі жергілікті нақыштар.</p></div></article>
+          <article class="heritage-card"><div class="heritage-art art-music">♫</div><div class="heritage-content"><span>03 / SOUND</span><h3 data-i18n="musicTitle">Музыкалық мұра</h3><p data-i18n="musicText">Домбыра, қобыз, қомуз және басқа аспаптар арқылы сақталған әуен дәстүрлері.</p></div></article>
+          <article class="heritage-card"><div class="heritage-art art-arch">⌑</div><div class="heritage-content"><span>04 / ARCHITECTURE</span><h3 data-i18n="architectureTitle">Сәулет өнері</h3><p data-i18n="architectureText">Күмбездер, өрнекті қасбеттер және тарихи қалалардағы құрылыс дәстүрлері.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap unity-section" id="about">
+      <div class="unity-panel">
+        <div class="unity-ornament">✧</div>
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="chapterFour">04 / БІРЛІК ПЕН БОЛАШАҚ</span></div>
+        <h2 data-i18n="unityTitle">Ортақ тамыр.<br><em>Бай мәдениет.</em></h2>
+        <p data-i18n="unityText">Мәдени мұра – халықтарды жақындастыратын көпір. Оны зерттеу, сақтау және келесі ұрпаққа жеткізу – ортақ міндет.</p>
+        <div class="country-row"><span>🇰🇿</span><span>🇰🇬</span><span>🇺🇿</span><span>🇹🇷</span><span>🇦🇿</span><span>🇹🇲</span></div>
+        <div class="unity-footer" data-i18n="unityFooter">БІР МҰРА – БІРНЕШЕ ХАЛЫҚ</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">✧</span><span><b>BIR MURA</b><small>DIGITAL HERITAGE MUSEUM</small></span></a><span data-i18n="footerText">Мәдени мұраны тану – болашаққа аманат.</span><span>© 2026 BIR MURA</span></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
