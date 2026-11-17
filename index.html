@@ -1239,6 +1239,146 @@ body.museum-view-lock{overflow:hidden}
 @media(max-width:700px){#museumRoom .bm22-caption-row{left:2%;right:2%;bottom:4%;gap:5px}#museumRoom .bm22-caption-row button{grid-template-columns:18px minmax(0,1fr);gap:3px 5px;padding:7px 5px}#museumRoom .bm22-caption-row button>b{width:18px;height:18px;font-size:7px}#museumRoom .bm22-caption-row button>span{font-size:6px;letter-spacing:0}#museumRoom .bm22-caption-row button>small{font-size:5px;letter-spacing:.3px}#museumRoom .bm22-help{bottom:calc(4% + 60px);font-size:6px}}
 </style>
 
+
+<style id="bir-mura-v27-real-country-corners">
+#museumRoom>.bm3d-host{z-index:6}
+#museumRoom .bm22-country-corner{position:absolute;z-index:11;left:2.2%;right:2.2%;bottom:2.2%;padding:10px 12px 11px;border:1px solid #cba76d99;border-radius:13px;background:linear-gradient(135deg,#071b1ded,#102f2ceF);box-shadow:0 10px 32px #0009;backdrop-filter:blur(10px);color:#f2dfbd}
+#museumRoom .bm22-corner-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:9px}
+#museumRoom .bm22-corner-heading>div{display:grid;gap:4px;min-width:0}
+#museumRoom .bm22-corner-heading small{font:800 7px Arial;letter-spacing:1.8px;color:#6ed2c6}
+#museumRoom .bm22-corner-heading b{font:600 clamp(12px,1.2vw,17px) Georgia;letter-spacing:.4px;color:#f3dfb9}
+#museumRoom .bm22-corner-heading span{font:700 8px Arial;color:#b4c7bb}
+#museumRoom .bm22-corner-index{white-space:nowrap;border:1px solid #d4b47766;border-radius:20px;padding:6px 9px;color:#e5c98e!important}
+#museumRoom .bm22-real-objects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#museumRoom .bm22-object-card{display:grid;grid-template-columns:78px minmax(0,1fr);gap:9px;min-width:0;min-height:83px;padding:7px;border:1px solid #d6bd8450;border-radius:9px;background:#0a2225;color:inherit;text-decoration:none;transition:background .2s,border-color .2s}
+#museumRoom .bm22-object-card:hover{border-color:#6bd4ca;background:#123b3b}
+#museumRoom .bm22-object-photo{position:relative;min-height:68px;border-radius:5px;overflow:hidden;background:#172d2d;display:grid;place-items:center}
+#museumRoom .bm22-object-photo img{width:100%;height:100%;min-height:68px;max-height:100px;object-fit:contain;background:#e6e1d7}
+#museumRoom .bm22-object-photo span{position:absolute;left:3px;right:3px;bottom:3px;padding:3px 2px;border-radius:3px;background:#061719d9;color:#8de0d5;text-align:center;font:800 5px Arial;letter-spacing:.5px}
+#museumRoom .bm22-object-copy{display:flex;flex-direction:column;gap:3px;min-width:0;justify-content:center}
+#museumRoom .bm22-object-copy b{font:700 9px Arial;line-height:1.3;color:#f3e2c4}
+#museumRoom .bm22-object-copy small{font:600 7px Arial;line-height:1.3;color:#cbb98f}
+#museumRoom .bm22-object-copy em{font:italic 7px Arial;color:#8ebbb0}
+#museumRoom .bm22-object-copy footer{margin-top:2px;font:600 6px Arial;line-height:1.25;color:#70cfc4}
+#museumRoom .bm22-help{bottom:calc(2.2% + 112px);z-index:12}
+@media(max-width:700px){
+ #museumRoom .bm22-country-corner{left:2%;right:2%;bottom:2%;padding:7px;border-radius:9px}
+ #museumRoom .bm22-corner-heading{margin-bottom:6px}
+ #museumRoom .bm22-corner-heading small{font-size:5px;letter-spacing:.8px}
+ #museumRoom .bm22-corner-heading b{font-size:10px}
+ #museumRoom .bm22-corner-heading span{font-size:6px}
+ #museumRoom .bm22-real-objects{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+ #museumRoom .bm22-object-card{grid-template-columns:54px minmax(0,1fr);gap:6px;padding:5px;min-height:64px}
+ #museumRoom .bm22-object-photo,#museumRoom .bm22-object-photo img{min-height:54px}
+ #museumRoom .bm22-object-photo span{font-size:4px}
+ #museumRoom .bm22-object-copy b{font-size:7px}
+ #museumRoom .bm22-object-copy small,#museumRoom .bm22-object-copy em{font-size:6px}
+ #museumRoom .bm22-object-copy footer{font-size:5px}
+ #museumRoom .bm22-help{bottom:calc(2% + 155px);font-size:5px}
+}
+</style>
+
+
+<style id="bir-mura-v27-final-gallery-layer">
+#museumRoom .bm22-caption-row{display:none!important}
+#museumRoom .bm22-country-corner{z-index:18}
+#museumRoom .bm22-help{z-index:19}
+#museumRoom .bm22-real-objects{align-items:stretch}
+#museumRoom .bm22-object-card{overflow:hidden}
+#museumRoom .bm22-object-photo img{object-position:center}
+@media(min-width:701px){
+ #museumRoom .bm22-country-corner{max-height:34%;overflow:auto}
+ #museumRoom .bm22-object-card{min-height:94px;grid-template-columns:92px minmax(0,1fr)}
+ #museumRoom .bm22-object-photo,#museumRoom .bm22-object-photo img{min-height:78px}
+}
+</style>
+
+
+<style id="bir-mura-v28-real-photo-exhibits">
+#museumRoom .bm22-country-corner{left:1.5%;right:1.5%;bottom:1.5%;padding:12px 14px 13px;background:linear-gradient(135deg,rgba(5,21,24,.97),rgba(12,43,42,.97));border-color:#d9b978;box-shadow:0 14px 42px #000b}
+#museumRoom .bm22-corner-heading{margin-bottom:11px}
+#museumRoom .bm22-corner-heading small{font-size:8px;letter-spacing:2px}
+#museumRoom .bm22-corner-heading b{font-size:clamp(15px,1.35vw,19px)}
+#museumRoom .bm22-real-objects{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#museumRoom .bm22-object-card{grid-template-columns:112px minmax(0,1fr);min-height:116px;padding:8px;gap:11px;background:linear-gradient(135deg,#0e292b,#163c38);border-color:#d9b97866}
+#museumRoom .bm22-object-photo{min-height:98px;background:#e8e1d4}
+#museumRoom .bm22-object-photo img{min-height:98px;max-height:125px;object-fit:contain}
+#museumRoom .bm22-object-copy b{font-size:10px}
+#museumRoom .bm22-object-copy small{font-size:8px}
+#museumRoom .bm22-object-copy em{font-size:8px}
+#museumRoom .bm22-object-copy footer{font-size:7px}
+#museumRoom .bm22-help{bottom:calc(1.5% + 145px)}
+@media(max-width:700px){
+ #museumRoom .bm22-country-corner{left:2%;right:2%;bottom:2%;padding:7px}
+ #museumRoom .bm22-corner-heading small{font-size:5px;letter-spacing:.7px}
+ #museumRoom .bm22-corner-heading b{font-size:10px}
+ #museumRoom .bm22-real-objects{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+ #museumRoom .bm22-object-card{grid-template-columns:56px minmax(0,1fr);min-height:68px;padding:5px;gap:6px}
+ #museumRoom .bm22-object-photo,#museumRoom .bm22-object-photo img{min-height:58px}
+ #museumRoom .bm22-object-copy b{font-size:7px}
+ #museumRoom .bm22-object-copy small,#museumRoom .bm22-object-copy em{font-size:6px}
+ #museumRoom .bm22-object-copy footer{font-size:5px}
+ #museumRoom .bm22-help{bottom:calc(2% + 155px);font-size:5px}
+}
+</style>
+
+
+
+
+
+<style id="bir-mura-v30-immersive-3d-artifacts">
+#museumRoom .bm29-case-exhibits{display:none!important}
+#museumRoom .bm22-caption-row{display:none!important}
+#museumRoom .bm22-canvas{filter:saturate(1.12) contrast(1.05)}
+#museumRoom .bm22-hud span:last-child{color:#e9c98d}
+#museumRoom .bm22-help{background:linear-gradient(135deg,#06191b,#123a36);border:1px solid #cba66a;color:#f2dfbd;box-shadow:0 8px 24px #0008}
+</style>
+
+
+<style id="bir-mura-v30-object-name-plaques">
+#museumRoom .bm30-object-labels{display:none!important}
+</style>
+
+
+<style id="bir-mura-v33-labels-mounted-on-pedestal-front">
+#museumRoom .bm30-object-labels{
+ display:block!important;position:absolute!important;inset:0!important;z-index:16!important;
+ pointer-events:none!important;
+}
+#museumRoom .bm30-object-labels span{
+ position:absolute;top:79.2%;width:14.8%;min-height:42px;
+ display:flex;align-items:center;justify-content:center;text-align:center;
+ padding:6px 7px 7px;box-sizing:border-box;
+ color:#ffe7b7!important;
+ background:linear-gradient(155deg,rgba(5,23,25,.99),rgba(19,48,42,.99))!important;
+ border:1.5px solid #e4c17d!important;
+ border-top:2px solid #f4d99c!important;
+ border-bottom:4px solid #986a32!important;
+ border-radius:4px 4px 7px 7px;
+ font-family:Georgia,'Times New Roman',serif!important;
+ font-size:clamp(9px,.82vw,13px)!important;font-weight:900!important;
+ line-height:1.2!important;letter-spacing:.45px!important;
+ text-shadow:0 1px 2px #000,0 0 8px #e7bd7055;
+ box-shadow:0 3px 8px #000a,inset 0 1px 0 #fff4,inset 0 -5px 9px #0006;
+ transform:perspective(300px) rotateX(3deg);
+}
+#museumRoom .bm30-object-labels span:nth-child(1){left:24.2%}
+#museumRoom .bm30-object-labels span:nth-child(2){left:42.4%;top:80.1%;width:15.2%}
+#museumRoom .bm30-object-labels span:nth-child(3){left:60.7%}
+#museumRoom .bm22-help{
+ top:9%!important;bottom:auto!important;left:50%!important;transform:translateX(-50%)!important;
+ z-index:17!important;white-space:nowrap;
+}
+#museumRoom .bm22-hud span:last-child{font-size:10px;letter-spacing:1.3px;color:#f1d49b}
+@media(max-width:700px){
+ #museumRoom .bm30-object-labels span{top:77%;width:17%;min-height:34px;padding:4px 3px;font-size:7px!important;letter-spacing:0}
+ #museumRoom .bm30-object-labels span:nth-child(1){left:21%}
+ #museumRoom .bm30-object-labels span:nth-child(2){left:41.5%;top:78%;width:17%}
+ #museumRoom .bm30-object-labels span:nth-child(3){left:62%}
+ #museumRoom .bm22-help{top:11%!important;font-size:6px!important}
+}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -1994,7 +2134,8 @@ const t=$('#map3dToggle'),area=$('.map-area');if(t&&area)t.addEventListener('cli
  const room=document.getElementById('museumRoom');if(!room)return;
  let host=room.querySelector('.bm3d-host');
  if(!host){host=document.createElement('div');host.className='bm3d-host';host.setAttribute('aria-label','BIR MURA 3D музей кеңістігі');room.appendChild(host);}
- host.innerHTML='<canvas class="bm22-canvas" aria-label="BIR MURA шынайы WebGL 3D музейі"></canvas><div class="bm22-hud"><span>✦ BIR MURA · GRAND GALLERY</span><span id="bm22Country">SILK ROAD COLLECTION</span></div><div class="bm22-caption-row"><button type="button" data-exhibit="0"><b>01</b><span id="bm22Label0">БІРІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button><button type="button" data-exhibit="1"><b>02</b><span id="bm22Label1">ЕКІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button><button type="button" data-exhibit="2"><b>03</b><span id="bm22Label2">ҮШІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button></div><div class="bm22-help">СҮЙРЕТУ · БҰРУ · ДӨҢГЕЛЕКПЕН ЖАҚЫНДАТУ</div><div class="bm22-loading">3D МУЗЕЙ ІСКЕ ҚОСЫЛУДА…</div><div class="bm22-error"></div>'; 
+ host.innerHTML=`<canvas class="bm22-canvas" aria-label="BIR MURA шынайы WebGL 3D музейі"></canvas><div class="bm22-hud"><span>✦ BIR MURA · GRAND GALLERY</span><span id="bm22Country">SILK ROAD COLLECTION</span></div><div class="bm22-caption-row"><button type="button" data-exhibit="0"><b>01</b><span id="bm22Label0">БІРІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button><button type="button" data-exhibit="1"><b>02</b><span id="bm22Label1">ЕКІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button><button type="button" data-exhibit="2"><b>03</b><span id="bm22Label2">ҮШІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button></div>
+ <div class="bm30-object-labels"><span id="bm30Label0">ҚЫРҒЫЗ ШЫРАҒЫ</span><span id="bm30Label1">АЛА-КИЙИЗ</span><span id="bm30Label2">ҚАЛПАҚ</span></div><div class="bm22-help">ЗАЛДЫ СҮЙРЕТІП БҰРЫҢЫЗ · ДӨҢГЕЛЕКПЕН ЖАҚЫНДАТЫҢЫЗ</div><div class="bm22-loading">3D МУЗЕЙ ІСКЕ ҚОСЫЛУДА…</div><div class="bm22-error"></div>`; 
  function showGallery(message){
   host.innerHTML='<div class="bm23-gallery"><div class="bm23-ceiling"></div><div class="bm23-wall"><div class="bm23-title"><small>BIR MURA · THE GREAT SILK ROAD</small><b id="bm23Title">GRAND CULTURAL HERITAGE GALLERY</b><span id="bm23Country">SILK ROAD COLLECTION</span></div></div><div class="bm23-col left"></div><div class="bm23-col right"></div><div class="bm23-floor"></div><div class="bm23-lamp l1"></div><div class="bm23-lamp l2"></div><div class="bm23-lamp l3"></div><button class="bm23-case c1" data-i="0"><i>◈</i><b id="bm23a">CERAMIC VESSEL</b><small>01 · EXHIBIT</small></button><button class="bm23-case c2" data-i="1"><i>✥</i><b id="bm23b">ORNAMENTAL ART</b><small>02 · EXHIBIT</small></button><button class="bm23-case c3" data-i="2"><i>⌑</i><b id="bm23c">SILK ROAD OBJECT</b><small>03 · EXHIBIT</small></button><div class="bm23-floorword">BIR MURA ✦ CULTURAL HERITAGE</div><div class="bm23-message">'+String(message||'WebGL қолжетімсіз — резервтік музей көрінісі').replace(/[<>]/g,'')+'</div></div>';
   const title=document.getElementById('roomCountryTitle');if(title)host.querySelector('#bm23Country').textContent=title.textContent;
@@ -2058,24 +2199,202 @@ const t=$('#map3dToggle'),area=$('.map-area');if(t&&area)t.addEventListener('cli
 
  const architecture=meshes.slice();
  let pb=gl.createBuffer(),nb=gl.createBuffer(),cb=gl.createBuffer(),count=0;
+
+ function panel(cx,cy,cz,w,h,col,th=.045){
+  cube(cx,cy,cz,w,h,th,col);
+ }
+ function diamond(cx,cy,cz,r,col){
+  const a=[cx,cy+r,cz],b=[cx+r,cy,cz],c=[cx,cy-r,cz],d=[cx-r,cy,cz];
+  pushTri(a,b,c,col);pushTri(a,c,d,col);
+ }
+ function textilePanel(cx,cy,cz,w,h,base,accent,light){
+  panel(cx,cy,cz,w,h,base,.055);
+  const z=cz+.034;
+  // woven border and central medallion
+  cube(cx,cy+h*.43,z,w*.9,.055,.025,accent);
+  cube(cx,cy-h*.43,z,w*.9,.055,.025,accent);
+  cube(cx-w*.43,cy,z,.05,h*.9,.025,accent);
+  cube(cx+w*.43,cy,z,.05,h*.9,.025,accent);
+  diamond(cx,cy,z+.025,w*.19,accent);
+  diamond(cx,cy,z+.05,w*.12,light);
+  for(let k=-2;k<=2;k++){
+   const x=cx+k*w*.145;
+   diamond(x,cy+h*.25,z+.03,w*.055,light);
+   diamond(x,cy-h*.25,z+.03,w*.055,light);
+  }
+  for(let k=-2;k<=2;k++){
+   const y=cy+k*h*.14;
+   diamond(cx-w*.31,y,z+.03,w*.045,light);
+   diamond(cx+w*.31,y,z+.03,w*.045,light);
+  }
+ }
+ function addKyrgyzArtifacts(){
+  // 01 — traditional felt saddle cover and padded saddle, modeled as a sculpted 3D object
+  const x=-4.15,z=-1.1;
+  cube(x,1.34,z,1.28,.34,.72,[.34,.13,.075]);
+  cube(x,1.55,z,1.02,.23,.62,[.52,.22,.1]);
+  // Raised front and rear saddle pommels
+  sphere(x-.48,1.77,z,.22,[.46,.2,.1],12,20);
+  sphere(x+.48,1.77,z,.22,[.46,.2,.1],12,20);
+  // Felt saddle cloth draped over both sides
+  textilePanel(x,1.52,z+.39,.98,.55,[.53,.12,.075],[.9,.62,.27],[.96,.83,.61]);
+  textilePanel(x,1.52,z-.39,.98,.55,[.53,.12,.075],[.9,.62,.27],[.96,.83,.61]);
+  for(let k=-2;k<=2;k++){
+   const tx=x+k*.17;
+   cyl(tx,1.15,z+.4,.018,.26,[.78,.55,.24],8);
+   sphere(tx,1.02,z+.4,.035,[.72,.15,.07],8,10);
+  }
+  // Leather girth straps and metal fittings
+  cube(x,1.3,z+.43,.11,.46,.035,[.16,.12,.08]);
+  for(let k=-1;k<=1;k++)sphere(x+k*.24,1.7,z+.43,.035,[.85,.68,.35],8,10);
+
+  // 02 — Ala-kiyiz felt rug, standing upright in the central case
+  textilePanel(0,1.85,-.52,1.05,1.55,[.48,.1,.08],[.91,.66,.3],[.95,.85,.67]);
+  // Dense applique motifs and visible wool edge
+  for(let row=0;row<4;row++)for(let col=0;col<3;col++){
+   const px=-.34+col*.34,py=1.38+row*.31;
+   diamond(px,py,-.475,.12,(row+col)%2?[.12,.25,.22]:[.82,.69,.45]);
+   diamond(px,py,-.445,.055,[.67,.12,.075]);
+  }
+  for(let k=0;k<13;k++){
+   const xx=-.48+k*.08;
+   cube(xx,1.05,-.51,.025,.16,.035,[.75,.55,.28]);
+  }
+
+  // 03 — Kyrgyz ak-kalpak, a white felt hat with black embroidered bands
+  const hx=4.15,hz=-1.1;
+  lathe(hx,hz,[[.48,1.12],[.52,1.2],[.45,1.32],[.38,1.55],[.3,1.82],[.21,2.08],[.1,2.28],[.035,2.34]], [.84,.79,.66],48);
+  cyl(hx,1.18,hz,.49,.09,[.17,.16,.13],48);
+  torus(hx,1.3,hz,.43,.035,[.12,.12,.1],48,8);
+  torus(hx,1.82,hz,.255,.028,[.12,.12,.1],40,8);
+  // black embroidered crossed lines and four crown panels
+  for(let k=0;k<8;k++){
+   const ang=k*Math.PI/4;
+   const px=hx+Math.cos(ang)*.27,pz=hz+Math.sin(ang)*.27;
+   cube(px,1.62,pz,.045,.42,.045,[.12,.12,.1]);
+   sphere(px,1.84,pz,.045,[.12,.12,.1],8,10);
+  }
+  sphere(hx,2.34,hz,.07,[.12,.12,.1],10,14);
+ }
+ function addCeramicArtifacts(key){
+  const x1=-4.15,x3=4.15;
+  const clay=key==='cn'?[.64,.39,.2]:[.55,.27,.13],glaze=key==='cn'?[.22,.48,.43]:[.12,.34,.52];
+  // amphora
+  lathe(x1,-1.1,[[.18,.72],[.3,.85],[.48,1.15],[.5,1.42],[.35,1.72],[.2,1.86],[.16,2.05],[.23,2.1]],clay,40);
+  torus(x1,2.08,-1.1,.22,.045,glaze,32,8);
+  // bowl / glazed vessel
+  lathe(0,-1.1,[[.08,.8],[.35,.83],[.56,1.05],[.62,1.38],[.55,1.52],[.48,1.45]],glaze,40);
+  torus(0,1.48,-1.1,.49,.035,[.85,.68,.36],40,8);
+  // silk scroll on a display stand
+  textilePanel(x3,1.75,-.58,1.12,1.65,[.65,.18,.12],[.87,.68,.35],[.93,.85,.68]);
+ }
+ function addKazakhArtifacts(){
+  // Otyrar-inspired ceramic storage vessel, glazed bowl and bronze oil lamp.
+  lathe(-4.15,-1.1,[[.12,.78],[.28,.82],[.42,1.02],[.48,1.3],[.43,1.55],[.3,1.7],[.18,1.72],[.2,1.82]],[.58,.29,.15],40);
+  torus(-4.15,1.8,-1.1,.2,.035,[.78,.57,.3],32,8);
+  for(let yy=1.05;yy<1.6;yy+=.16)torus(-4.15,yy,-.57,.4-(yy-1.05)*.18,.018,[.8,.59,.31],32,6);
+  lathe(0,-1.1,[[.08,.82],[.35,.85],[.55,1.04],[.58,1.35],[.5,1.48],[.42,1.42]],[.16,.38,.36],40);
+  torus(0,1.45,-1.1,.46,.035,[.83,.66,.36],40,8);
+  // Bronze lamp with a shallow dish and raised wick holder
+  lathe(4.15,-1.1,[[.08,.88],[.3,.92],[.42,1.03],[.32,1.12],[.16,1.17],[.1,1.35],[.05,1.5]],[.62,.42,.2],32);
+  sphere(4.15,1.51,-1.1,.07,[.9,.7,.35],12,16);
+ }
+ function addTextileArtifacts(key){
+  const colors=key==='tm'?[[.5,.16,.08],[.77,.48,.19],[.92,.78,.53]]:[[.45,.12,.1],[.82,.57,.24],[.9,.82,.65]];
+  textilePanel(-4.15,1.82,-.52,1.1,1.7,...colors);
+  textilePanel(0,1.82,-.52,1.1,1.7,...colors.slice().reverse());
+  textilePanel(4.15,1.82,-.52,1.1,1.7,...colors);
+ }
+
+ const nameGlyphs={
+ A:["01110","10001","10001","11111","10001","10001","10001"],B:["11110","10001","10001","11110","10001","10001","11110"],
+ C:["01111","10000","10000","10000","10000","10000","01111"],D:["11110","10001","10001","10001","10001","10001","11110"],
+ E:["11111","10000","10000","11110","10000","10000","11111"],F:["11111","10000","10000","11110","10000","10000","10000"],
+ G:["01111","10000","10000","10111","10001","10001","01111"],H:["10001","10001","10001","11111","10001","10001","10001"],
+ I:["11111","00100","00100","00100","00100","00100","11111"],J:["00111","00010","00010","00010","10010","10010","01100"],
+ K:["10001","10010","10100","11000","10100","10010","10001"],L:["10000","10000","10000","10000","10000","10000","11111"],
+ M:["10001","11011","10101","10101","10001","10001","10001"],N:["10001","11001","10101","10011","10001","10001","10001"],
+ O:["01110","10001","10001","10001","10001","10001","01110"],P:["11110","10001","10001","11110","10000","10000","10000"],
+ Q:["01110","10001","10001","10001","10101","10010","01101"],R:["11110","10001","10001","11110","10100","10010","10001"],
+ S:["01111","10000","10000","01110","00001","00001","11110"],T:["11111","00100","00100","00100","00100","00100","00100"],
+ U:["10001","10001","10001","10001","10001","10001","01110"],V:["10001","10001","10001","10001","10001","01010","00100"],
+ W:["10001","10001","10001","10101","10101","11011","10001"],X:["10001","10001","01010","00100","01010","10001","10001"],
+ Y:["10001","10001","01010","00100","00100","00100","00100"],Z:["11111","00001","00010","00100","01000","10000","11111"],
+ "-":["00000","00000","00000","11111","00000","00000","00000"]
+ };
+ function add3DNameplate(x,label){
+  const z=-.66, plaque=[.025,.065,.064];
+  cube(x,.91,z,1.62,.34,.10,plaque);
+  cube(x,.745,z,.0+1.62,.025,.11,[.72,.51,.24]);
+  cube(x,1.075,z,1.62,.022,.11,[.72,.51,.24]);
+  cube(x-.80,.91,z,.022,.34,.11,[.72,.51,.24]);
+  cube(x+.80,.91,z,.022,.34,.11,[.72,.51,.24]);
+  const chars=label.toUpperCase().split('');
+  const cell=.018, step=.024, charStep=.145;
+  const total=(chars.length-1)*charStep+5*step;
+  const start=x-total/2;
+  chars.forEach((ch,ci)=>{
+   const glyph=nameGlyphs[ch];if(!glyph)return;
+   glyph.forEach((row,ry)=>[...row].forEach((bit,cx)=>{
+    if(bit==='1')cube(start+ci*charStep+cx*step,.91+(3-ry)*step,-.595,.021,.022,.025,[.94,.76,.43]);
+   }));
+  });
+ }
+ function add3DNameplates(key){
+  // Clear Kazakh exhibit titles are rendered on the front face of each 3D pedestal.
+ }
+
  function addExhibits(key){
   meshes=architecture.slice();
-  const x0=-4.15,x1=0,x2=4.15,z=-1.1;
-  const metal=C.gold2,cer=C.ceramic,jade=C.jade,blue=C.blue;
-  const vase=(x,col)=>lathe(x,z,[[0,.66],[.24,.7],[.43,.94],[.49,1.25],[.42,1.55],[.25,1.79],[.2,1.96],[.3,2.02],[.31,2.1]],col);
-  const bowl=(x,col)=>lathe(x,z,[[0,.72],[.3,.75],[.52,.92],[.67,1.17],[.62,1.25],[.52,1.2]],col);
-  if(key==='kz'){vase(x0,cer);torus(x0,1.12,z,.43,.025,metal);torus(x0,1.52,z,.29,.025,metal);torus(x1,1.48,z,.48,.13,jade,64,14);torus(x1,1.48,z,.68,.025,metal,64,8);sphere(x1,1.48,z,.16,metal);bowl(x2,blue);torus(x2,1.2,z,.62,.045,metal);for(let k=0;k<8;k++){const q=k*Math.PI/4;sphere(x2+Math.cos(q)*.47,1.08,z+Math.sin(q)*.47,.07,C.ivory,8,12)}}
-  else if(key==='cn'){vase(x0,[.72,.78,.68]);for(let k=0;k<5;k++)torus(x0,1.0+k*.19,z,.39-k*.025,.018,blue);cyl(x1,1.35,z,.36,1.3,[.72,.49,.22]);torus(x1,2.02,z,.36,.07,metal);torus(x1,1.0,z,.36,.06,metal);for(let k=0;k<12;k++){const q=k*Math.PI/6;sphere(x2+Math.cos(q)*.45,1.35,z+Math.sin(q)*.45,.09,[.78,.67,.48],8,10)}torus(x2,1.35,z,.48,.06,metal)}
-  else if(key==='kg'){lathe(x0,z,[[0,.68],[.48,.7],[.52,1.0],[.3,1.18],[0,1.2]],C.ivory);torus(x0,1.04,z,.48,.04,metal);torus(x1,1.3,z,.48,.1,cer,48,12);torus(x1,1.3,z,.65,.035,metal);sphere(x1,1.3,z,.13,metal);for(let k=0;k<8;k++){const q=k*Math.PI/4;cube(x2+Math.cos(q)*.35,1.35,z+Math.sin(q)*.35,.22,.22,.12,blue)}torus(x2,1.35,z,.52,.04,metal)}
-  else if(key==='uz'){cube(x0,1.38,z,.9,1.25,.12,blue);for(let k=0;k<4;k++)cube(x0-.3+k*.2,1.38,z+.08,.045,1.0,.04,metal);for(let k=0;k<4;k++)cube(x0,1.0+k*.24,z+.08,.8,.045,.04,metal);vase(x1,[.18,.48,.53]);torus(x1,1.35,z,.45,.035,metal);lathe(x2,z,[[0,.7],[.42,.72],[.58,1.0],[.42,1.22],[.2,1.35],[0,1.38]],cer);torus(x2,1.0,z,.58,.025,metal)}
-  else if(key==='tj'){cyl(x0,1.25,z,.34,1.1,[.62,.3,.22]);for(let k=0;k<6;k++)torus(x0,.85+k*.15,z,.34,.018,metal);bowl(x1,jade);torus(x1,1.2,z,.62,.035,metal);for(let k=0;k<6;k++){const q=k*Math.PI/3;sphere(x2+Math.cos(q)*.38,1.3,z+Math.sin(q)*.38,.12,cer,8,12)}torus(x2,1.3,z,.58,.05,metal)}
-  else if(key==='tm'){torus(x0,1.35,z,.52,.12,cer,64,16);torus(x0,1.35,z,.28,.06,metal);for(let k=0;k<8;k++){const q=k*Math.PI/4;sphere(x0+Math.cos(q)*.42,1.35,z+Math.sin(q)*.42,.08,metal,8,10)}bowl(x1,blue);torus(x1,1.2,z,.62,.04,metal);vase(x2,[.64,.68,.48]);torus(x2,1.1,z,.43,.025,metal)}
-  else if(key==='az'){cube(x0,1.4,z,.95,1.35,.12,metal);for(let k=0;k<5;k++){cube(x0-.38+k*.19,1.4,z+.09,.045,1.1,.04,[.28,.56,.52]);cube(x0,1.0+k*.2,z+.1,.85,.045,.04,[.28,.56,.52])}sphere(x1,1.35,z,.38,[.68,.46,.22]);torus(x1,1.35,z,.53,.04,metal);lathe(x2,z,[[0,.7],[.38,.75],[.48,1.1],[.36,1.5],[.16,1.8],[0,1.82]],blue);torus(x2,1.1,z,.48,.03,metal)}
+  if(key==='kz')addKazakhArtifacts();
+  else if(key==='kg')addKyrgyzArtifacts();
+  else if(key==='cn')addCeramicArtifacts(key);
+  else if(key==='uz'||key==='tm')addTextileArtifacts(key);
+  else if(key==='tj'){
+   // Tangible Sogdian-era display objects: painted ceramic ossuary, bronze ewer, and coin group.
+   lathe(-4.15,-1.1,[[.16,.82],[.34,.86],[.46,1.02],[.5,1.34],[.42,1.58],[.28,1.72],[.18,1.75]], [.72,.58,.36],40);
+   torus(-4.15,1.72,-1.1,.19,.035,[.82,.69,.45],32,8);
+   for(let k=0;k<5;k++){
+    const yy=1.18+k*.105;
+    torus(-4.15,yy,-.57,.25-k*.012,.018,[.28,.16,.09],32,6);
+   }
+   // Bronze ewer with body, neck, spout and handle
+   lathe(0,-1.1,[[.12,.82],[.27,.88],[.42,1.08],[.45,1.32],[.34,1.52],[.2,1.58],[.13,1.8],[.19,1.84]],[.48,.31,.15],40);
+   torus(0,1.83,-1.1,.18,.035,[.82,.62,.29],32,8);
+   cyl(.32,1.35,-1.1,.055,.62,[.55,.36,.18],16);
+   sphere(.32,1.67,-1.1,.07,[.55,.36,.18],12,16);
+   // Small Sogdian coin collection on a low velvet mount
+   cube(4.15,1.02,-1.1,.95,.12,.62,[.18,.12,.1]);
+   for(let row=0;row<2;row++)for(let col=0;col<3;col++){
+    const xx=3.86+col*.29, zz=-1.29+row*.28;
+    cyl(xx,1.13,zz,.105,.035,[.72,.55,.28],24);
+    torus(xx,1.153,zz,.075,.012,[.92,.77,.46],24,6);
+    sphere(xx,1.17,zz,.027,[.28,.19,.1],8,10);
+   }
+  }else{
+   // Sheki stained-glass / carved wood inspired geometric panels
+   textilePanel(-4.15,1.8,-.52,1.1,1.6,[.12,.34,.3],[.84,.62,.25],[.22,.55,.48]);
+   textilePanel(0,1.8,-.52,1.1,1.6,[.16,.31,.28],[.86,.68,.32],[.25,.6,.52]);
+   textilePanel(4.15,1.8,-.52,1.1,1.6,[.12,.34,.3],[.84,.62,.25],[.22,.55,.48]);
+  }
+  add3DNameplates(key);
   const pos=[],nor=[],colors=[];
-  meshes.forEach(m=>{for(let q=0;q<m.verts.length;q+=3){pos.push(m.verts[q],m.verts[q+1],m.verts[q+2]);nor.push(m.norms[q],m.norms[q+1],m.norms[q+2]);colors.push(...m.color)}});
-  gl.bindBuffer(gl.ARRAY_BUFFER,pb);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(pos),gl.STATIC_DRAW);gl.enableVertexAttribArray(loc.p);gl.vertexAttribPointer(loc.p,3,gl.FLOAT,false,0,0);
-  gl.bindBuffer(gl.ARRAY_BUFFER,nb);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(nor),gl.STATIC_DRAW);gl.enableVertexAttribArray(loc.n);gl.vertexAttribPointer(loc.n,3,gl.FLOAT,false,0,0);
-  gl.bindBuffer(gl.ARRAY_BUFFER,cb);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(colors),gl.STATIC_DRAW);gl.enableVertexAttribArray(loc.color);gl.vertexAttribPointer(loc.color,3,gl.FLOAT,false,0,0);
+  meshes.forEach(m=>{
+   for(let q=0;q<m.verts.length;q+=3){
+    pos.push(m.verts[q],m.verts[q+1],m.verts[q+2]);
+    nor.push(m.norms[q],m.norms[q+1],m.norms[q+2]);
+    colors.push(...m.color);
+   }
+  });
+  gl.bindBuffer(gl.ARRAY_BUFFER,pb);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(pos),gl.STATIC_DRAW);
+  gl.enableVertexAttribArray(loc.p);gl.vertexAttribPointer(loc.p,3,gl.FLOAT,false,0,0);
+  gl.bindBuffer(gl.ARRAY_BUFFER,nb);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(nor),gl.STATIC_DRAW);
+  gl.enableVertexAttribArray(loc.n);gl.vertexAttribPointer(loc.n,3,gl.FLOAT,false,0,0);
+  gl.bindBuffer(gl.ARRAY_BUFFER,cb);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(colors),gl.STATIC_DRAW);
+  gl.enableVertexAttribArray(loc.color);gl.vertexAttribPointer(loc.color,3,gl.FLOAT,false,0,0);
   count=pos.length/3;
  }
  addExhibits('kz');
@@ -2090,15 +2409,66 @@ const t=$('#map3dToggle'),area=$('.map-area');if(t&&area)t.addEventListener('cli
  canvas.addEventListener('pointerup',()=>drag=false);canvas.addEventListener('pointercancel',()=>drag=false);
  canvas.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(10,Math.min(25,dist+e.deltaY*.018))},{passive:false});
  canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)/r.width;const idx=x<.39?0:x<.65?1:2;document.querySelector('.museum-vitrine[data-artifact="'+idx+'"]')?.click()});
+
+ const realCollections={
+ kz:{title:'ҚАЗАҚСТАН · ОТЫРАР БҰРЫШЫ',sub:'Отырар оазисі · ортағасырлық қала қолөнері',items:[
+  {name:'Ортағасырлық шыны құмыра',date:'Отырар · орта ғасырлар',material:'Шыны',url:'https://www.otyrarmuseum.kz/images/member4.jpg',source:'Отырар мемлекеттік археологиялық музей-қорығы',href:'https://www.otyrarmuseum.kz/en/'},
+  {name:'Қыш құмыра',date:'Отырар · XIII–XIV ғғ.',material:'Күйдірілген саз',url:'https://el.kz/upload/storage_el/b3/b3a8faaaefba27602b3838e9e6024008.jpg',source:'El.kz · Отырар жәдігерлері',href:'https://el.kz/ru/otrar_v_detalyah_27098/'}
+ ]},
+ cn:{title:'ҚЫТАЙ · ТАН ДӘУІРІ БҰРЫШЫ',sub:'Чанъань · Дуньхуан · жібек және керамика',items:[
+  {name:'Үш түсті глазурьлі амфора',date:'Тан дәуірі · VII ғасырдың соңы',material:'Керамика, sancai глазурі',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/39524/172046/main-image',source:'The Metropolitan Museum of Art · 1997.1.2',href:'https://www.metmuseum.org/art/collection/search/39524'},
+  {name:'Гүл медальоны бар жібек мата',date:'VIII ғасырдың соңы – IX ғасырдың басы',material:'Жібек саржасы',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/39595/151387/main-image',source:'The Metropolitan Museum of Art · 1996.103.1',href:'https://www.metmuseum.org/art/collection/search/39595'}
+ ]},
+ kg:{title:'ҚЫРҒЫЗСТАН · КИІЗ ӨНЕРІ БҰРЫШЫ',sub:'Тянь-Шань · көшпелі тұрмыс және киіз басу',items:[
+  {name:'Қырғыз шырдағы',date:'Дәстүрлі киіз өнері · қазіргі музей экспозициясы',material:'Киіз, аппликация және тігіс',url:'https://cdn-1.aki.kg/cdn-st-0/qfD/P/2940398.0071403a03602646e6f6069b864cea72.jpg',source:'Қырғыз ұлттық бейнелеу өнері музейіндегі көрме фотосы · AKIpress',href:'https://culture.akipress.org/news:2351014'},
+  {name:'Ала-кийиз және шырдак дәстүрі',date:'UNESCO · 2012 жылы тізімге енгізілген',material:'Жүннен басылған киіз',url:'https://cdn.tripster.ru/thumbs2/dcd1f9c6-95f6-11ee-aa27-2ac84d429667.1000x1350.jpeg',source:'Киіз кілемдер көрмесі · фотоиллюстрация',href:'https://ich.unesco.org/en/USL/ala-kiyiz-and-shyrdak-art-of-kyrgyz-traditional-felt-carpets-00693'}
+ ]},
+ uz:{title:'ӨЗБЕКСТАН · САМАРҚАНД БҰРЫШЫ',sub:'Самарқанд · Бұхара · керамика және кесте',items:[
+  {name:'Бұхара кестелі жапқышы (Suzani)',date:'XIX ғасырдың басы',material:'Зығыр матаға жібек кесте',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/447384/890075/main-image',source:'The Metropolitan Museum of Art · 21.114.3',href:'https://www.metmuseum.org/art/collection/search/447384'},
+  {name:'Нұрата кестелі панносы',date:'XIX ғасырдың басы',material:'Мақтаға жібек кесте',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/444991/870025/main-image',source:'The Metropolitan Museum of Art · 07.72',href:'https://www.metmuseum.org/art/collection/search/444991'},
+  {name:'Самарқанд тостағаны',date:'IX–X ғасырлар',material:'Полихромды сырлы қыш',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/449544/894652/main-image',source:'The Metropolitan Museum of Art · 39.40.7',href:'https://www.metmuseum.org/art/collection/search/449544'}
+ ]},
+ tj:{title:'ТӘЖІКСТАН · СОҒДЫ ӨНЕРІ БҰРЫШЫ',sub:'Ежелгі Пенджикент · соғды тұрмыстық бұйымдары мен нумизматика',items:[
+  {name:'Соғды керамикалық оссуарийі',date:'V–VIII ғасырлар',material:'Күйдірілген саз',url:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sogdian_ossuary.jpg/640px-Sogdian_ossuary.jpg',source:'Соғды археологиялық мұрасы · анықтамалық фото',href:'https://en.wikipedia.org/wiki/Sogdia'},
+  {name:'Қола құман',date:'Ерте орта ғасырлар',material:'Қола',url:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Islamic_bronze_ewer.jpg/640px-Islamic_bronze_ewer.jpg',source:'Орталық Азия металл бұйымдары · анықтамалық фото',href:'https://www.metmuseum.org/art/collection'},
+  {name:'Соғды теңгелері',date:'VI–VIII ғасырлар',material:'Күміс және мыс',url:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Sogdian_coin.jpg/640px-Sogdian_coin.jpg',source:'Соғды нумизматикасы · анықтамалық фото',href:'https://en.wikipedia.org/wiki/Sogdia'}
+ ]},
+ tm:{title:'ТҮРІКМЕНСТАН · КІЛЕМ ӨНЕРІ БҰРЫШЫ',sub:'Мерв · Ниса · түрікмен тоқымашылығы',items:[
+  {name:'Йомут негізгі кілемі',date:'XIX ғасырдың бірінші жартысы',material:'Жүн, түйіндеп тоқу',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/452597/861832/main-image',source:'The Metropolitan Museum of Art · 1974.149.45',href:'https://www.metmuseum.org/art/collection/search/452597'},
+  {name:'Текке негізгі кілемі',date:'XIX ғасырдың басы',material:'Жүн, түйіндеп тоқу',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/447504/1369840/main-image',source:'The Metropolitan Museum of Art · 22.100.45',href:'https://www.metmuseum.org/art/collection/search/447504'},
+  {name:'Салор негізгі кілемі',date:'XVIII ғасырдың соңы – XIX ғасырдың басы',material:'Жүн және жібек',url:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/452598/1366904/main-image',source:'The Metropolitan Museum of Art · 1974.149.46',href:'https://www.metmuseum.org/art/collection/search/452598'}
+ ]},
+ az:{title:'ӘЗЕРБАЙЖАН · ШЕКИ БҰРЫШЫ',sub:'Шеки хан сарайы · шебеке шыны өнері',items:[
+  {name:'Шебеке витражды терезесі',date:'XVIII ғасырдағы сарай дәстүрі',material:'Ағаш тор және түрлі түсті шыны',url:'https://outtour.az/uploads/tour/1760526387482-ldp7k2.jpg',source:'Шеки хан сарайындағы шебеке · фото',href:'https://azerbaijan.travel/storage/pages/237/d061c632af174df2e7b57a95c846f9cbSheki%20DMO%20Visitor%20Map%20-%20Electronic.pdf'}
+ ]}
+ };
+ function renderRealCorner(key){
+  const c=realCollections[key]||realCollections.kz;
+  const hud=host.querySelector('#bm22Country');
+  const countryTitles={kz:'ҚАЗАҚСТАН · ОТЫРАР',cn:'ҚЫТАЙ · ТАН ДӘУІРІ',kg:'ҚЫРҒЫЗСТАН · СУЯБ',uz:'ӨЗБЕКСТАН · САМАРҚАНД',tj:'ТӘЖІКСТАН · СОҒДЫ ӨНЕРІ',tm:'ТҮРІКМЕНСТАН · КІЛЕМ ӨНЕРІ',az:'ӘЗЕРБАЙЖАН · ШЕКИ'};
+  if(hud)hud.textContent=countryTitles[key]||'ЖІБЕК ЖОЛЫ ЖӘДІГЕРЛЕРІ';
+  const labels=[...host.querySelectorAll('.bm30-object-labels span')];
+  const kk={
+   kz:['ОТЫРАР ҚҰМЫРАСЫ','ҚЫШ ТОСТАҒАН','ҚОЛА МАЙШАМ'],
+   cn:['ТАН ДӘУІРІ ҚҰМЫРАСЫ','ҮШ ТҮСТІ КЕРАМИКА','ЖІБЕК МАТА'],
+   kg:['ҚЫРҒЫЗ ЕР-ТҰРМАНЫ','АЛА-КИЙИЗ КІЛЕМІ','АҚ ҚАЛПАҚ'],
+   uz:['НҰРАТА КЕСТЕСІ','САМАРҚАНД ТОСТАҒАНЫ','КЕРАМИКАЛЫҚ ӨРНЕК'],
+   tj:['СОҒДЫ ОСУАРИЙІ','ҚОЛА ҚҰМАН','СОҒДЫ ТЕҢГЕЛЕРІ'],
+   tm:['ЙОМУТ КІЛЕМІ','ТЕККЕ КІЛЕМІ','САЛОР КІЛЕМІ'],
+   az:['ШЕБЕКЕ ТЕРЕЗЕСІ','МЫС ҚҰМАН','ЖІБЕК КІЛЕМІ']
+  };
+  (kk[key]||kk.kz).forEach((name,i)=>{if(labels[i])labels[i].textContent=name;});
+ }
+
  const country=document.getElementById('roomCountryTitle'),names=['roomArtifactOne','roomArtifactTwo','roomArtifactThree'];
  window.BIR_MURA_UPDATE_3D=(key,labels)=>{
-  addExhibits(key);
+  addExhibits(key);renderRealCorner(key);
   (labels||[]).forEach((label,i)=>{const node=host.querySelector('#bm22Label'+i);if(node)node.textContent=label});
   const title=document.getElementById('roomCountryTitle');if(title)host.querySelector('#bm22Country').textContent=title.textContent;
  }; 
  host.querySelectorAll('.bm22-caption-row button').forEach(btn=>btn.addEventListener('click',()=>document.querySelector('.museum-vitrine[data-artifact="'+btn.dataset.exhibit+'"]')?.click()));
  function updateHud(){host.querySelector('#bm22Country').textContent=country?.textContent||'SILK ROAD COLLECTION'}
- const mo=new MutationObserver(updateHud);if(country)mo.observe(country,{childList:true,subtree:true,characterData:true});names.forEach(id=>{const n=document.getElementById(id);if(n)mo.observe(n,{childList:true,subtree:true,characterData:true})});updateHud();
+ const mo=new MutationObserver(updateHud);if(country)mo.observe(country,{childList:true,subtree:true,characterData:true});names.forEach(id=>{const n=document.getElementById(id);if(n)mo.observe(n,{childList:true,subtree:true,characterData:true})});updateHud();renderRealCorner('kz');
  gl.enable(gl.DEPTH_TEST);gl.enable(gl.CULL_FACE);gl.cullFace(gl.BACK);gl.clearColor(.025,.07,.075,1);
  function render(){requestAnimationFrame(render);const w=canvas.width,h=canvas.height;if(!w||!h)return;
   const eye=[Math.sin(yaw)*dist,4+Math.sin(pitch)*dist*.5,Math.cos(yaw)*dist-1.5],view=lookAt(eye,[0,2.7,-1.6],[0,1,0]),proj=perspective(Math.PI/3,w/h,.1,80),mvp=mul(proj,view);
