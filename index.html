@@ -1379,6 +1379,96 @@ body.museum-view-lock{overflow:hidden}
 }
 </style>
 
+
+<style id="bir-mura-virtual-walk-mode">
+#museumRoom .bm-walk-toggle{position:absolute;z-index:14;right:16px;top:16px;border:1px solid #e4c68d;background:linear-gradient(130deg,#e7c98f,#a77a42);color:#132a2b;border-radius:24px;padding:11px 15px;font:800 9px var(--sans);letter-spacing:.8px;box-shadow:0 7px 24px #0007}
+#museumRoom .bm-walk-toggle.active{background:#10383a;color:#f3dba9;border-color:#6ed1c5}
+#museumRoom .bm-walk-pad{display:none;position:absolute;z-index:14;left:14px;bottom:48px;gap:5px;flex-direction:column;align-items:center;touch-action:none}
+#museumRoom .bm-walk-pad>div{display:flex;gap:5px}
+#museumRoom .bm-walk-pad button{width:43px;height:43px;border-radius:13px;border:1px solid #d8bd83aa;background:#092326dd;color:#f4dfb6;font-size:17px;box-shadow:0 5px 16px #0007;touch-action:none}
+#museumRoom .bm-walk-tip{display:none;position:absolute;z-index:13;left:50%;bottom:13px;transform:translateX(-50%);padding:8px 12px;border:1px solid #d8bd8355;border-radius:18px;background:#071a1ddd;color:#f0d7a4;font:700 8px var(--sans);white-space:nowrap}
+#museumRoom.walk-mode .bm-walk-pad,#museumRoom.walk-mode .bm-walk-tip{display:flex}
+#museumRoom.walk-mode .bm22-help{display:none}
+@media(max-width:650px){#museumRoom .bm-walk-toggle{top:auto;right:9px;bottom:12px;padding:10px 12px;font-size:8px}#museumRoom .bm-walk-tip{bottom:12px;left:auto;right:9px;transform:none;max-width:45%;white-space:normal;text-align:center;font-size:7px}#museumRoom.walk-mode .bm-walk-toggle{bottom:auto;top:9px}#museumRoom .bm-walk-pad{bottom:58px;left:10px}}
+</style>
+
+
+<style id="bir-mura-v35-wow">
+#museumRoom>.bm3d-host{background:radial-gradient(ellipse at 50% 24%,#1c4944 0%,#0b282a 42%,#041316 100%)!important}
+#museumRoom .bm22-canvas{filter:saturate(1.18) contrast(1.08);outline:none}
+#museumRoom .bm22-hud span{box-shadow:0 5px 24px #0008;border-color:#e6c98b88}
+#museumRoom .bm22-caption-row button{box-shadow:0 12px 30px #0009, inset 0 1px #fff2;transition:transform .2s,border-color .2s,background .2s}
+#museumRoom .bm22-caption-row button:active{transform:scale(.97)}
+#museumRoom .bm-walk-toggle{box-shadow:0 8px 28px #0009,0 0 22px #d8b47722;backdrop-filter:blur(10px)}
+#museumRoom .bm-walk-pad button{font-weight:900}
+#museumRoom .bm22-loading{padding:12px 18px;border:1px solid #d8b47766;border-radius:30px;background:#06191ded;box-shadow:0 10px 40px #0008}
+#museumRoom .bm22-error{display:none}
+@media(max-width:650px){
+ #museumRoom .bm22-caption-row{bottom:4%;gap:5px}
+ #museumRoom .bm22-caption-row button{padding:8px 6px;grid-template-columns:19px minmax(0,1fr);gap:3px 5px}
+ #museumRoom .bm22-caption-row button>b{width:19px;height:19px;font-size:7px}
+ #museumRoom .bm22-caption-row button>span{font-size:7px}
+ #museumRoom .bm22-caption-row button>small{font-size:5px}
+}
+</style>
+
+
+<style id="bir-mura-v36-readable-exhibit-typography">
+/* Экспонат атаулары: оқуға жеңіл, біркелкі және дұрыс тураланған */
+#museumRoom .bm30-object-labels span{
+  width:16.2%!important;
+  min-height:54px!important;
+  padding:8px 10px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:clamp(11px,.92vw,16px)!important;
+  font-weight:800!important;
+  line-height:1.28!important;
+  letter-spacing:.12px!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  hyphens:none!important;
+  text-wrap:balance;
+}
+#museumRoom .bm30-object-labels span:nth-child(1){left:23.5%!important}
+#museumRoom .bm30-object-labels span:nth-child(2){left:41.9%!important;width:16.2%!important;top:79.2%!important}
+#museumRoom .bm30-object-labels span:nth-child(3){left:60.3%!important}
+#museumRoom .bm22-hud span{
+  font-size:clamp(9px,.68vw,12px)!important;
+  letter-spacing:1.15px!important;
+}
+#museumRoom .bm22-help{
+  font-size:clamp(9px,.62vw,11px)!important;
+  letter-spacing:.55px!important;
+  line-height:1.45!important;
+  padding:8px 14px!important;
+  max-width:90%!important;
+  text-align:center!important;
+}
+@media(max-width:900px){
+ #museumRoom .bm30-object-labels span{
+   width:17%!important;min-height:43px!important;padding:5px 5px!important;
+   font-size:clamp(8px,1.25vw,12px)!important;line-height:1.22!important;
+   letter-spacing:0!important;
+ }
+ #museumRoom .bm30-object-labels span:nth-child(1){left:22.8%!important}
+ #museumRoom .bm30-object-labels span:nth-child(2){left:41.5%!important;width:17%!important}
+ #museumRoom .bm30-object-labels span:nth-child(3){left:60.2%!important}
+}
+@media(max-width:600px){
+ #museumRoom .bm30-object-labels span{
+   min-height:34px!important;padding:4px 3px!important;
+   font-size:clamp(7px,2vw,10px)!important;line-height:1.16!important;
+ }
+ #museumRoom .bm22-hud span{font-size:8px!important;letter-spacing:.6px!important}
+ #museumRoom .bm22-help{font-size:8px!important;max-width:84%!important}
+}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -2135,7 +2225,7 @@ const t=$('#map3dToggle'),area=$('.map-area');if(t&&area)t.addEventListener('cli
  let host=room.querySelector('.bm3d-host');
  if(!host){host=document.createElement('div');host.className='bm3d-host';host.setAttribute('aria-label','BIR MURA 3D музей кеңістігі');room.appendChild(host);}
  host.innerHTML=`<canvas class="bm22-canvas" aria-label="BIR MURA шынайы WebGL 3D музейі"></canvas><div class="bm22-hud"><span>✦ BIR MURA · GRAND GALLERY</span><span id="bm22Country">SILK ROAD COLLECTION</span></div><div class="bm22-caption-row"><button type="button" data-exhibit="0"><b>01</b><span id="bm22Label0">БІРІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button><button type="button" data-exhibit="1"><b>02</b><span id="bm22Label1">ЕКІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button><button type="button" data-exhibit="2"><b>03</b><span id="bm22Label2">ҮШІНШІ ЖӘДІГЕР</span><small>ЭКСПОНАТТЫ АШУ ↗</small></button></div>
- <div class="bm30-object-labels"><span id="bm30Label0">ҚЫРҒЫЗ ШЫРАҒЫ</span><span id="bm30Label1">АЛА-КИЙИЗ</span><span id="bm30Label2">ҚАЛПАҚ</span></div><div class="bm22-help">ЗАЛДЫ СҮЙРЕТІП БҰРЫҢЫЗ · ДӨҢГЕЛЕКПЕН ЖАҚЫНДАТЫҢЫЗ</div><div class="bm22-loading">3D МУЗЕЙ ІСКЕ ҚОСЫЛУДА…</div><div class="bm22-error"></div>`; 
+ <div class="bm30-object-labels"><span id="bm30Label0">ҚЫРҒЫЗ ШЫРАҒЫ</span><span id="bm30Label1">АЛА-КИЙИЗ</span><span id="bm30Label2">ҚАЛПАҚ</span></div><div class="bm22-help" id="bm22Help">ЗАЛДЫ СҮЙРЕТІП БҰРЫҢЫЗ · ДӨҢГЕЛЕКПЕН ЖАҚЫНДАТЫҢЫЗ</div><button type="button" class="bm-walk-toggle" id="bmWalkToggle">🚶 МУЗЕЙДІ АРАЛАУ</button><div class="bm-walk-pad" id="bmWalkPad"><button data-move="forward">▲</button><div><button data-move="left">◀</button><button data-move="back">▼</button><button data-move="right">▶</button></div></div><div class="bm-walk-tip" id="bmWalkTip">W A S D · ҚОЗҒАЛУ | ТІНТУІРМЕН БҰРУ</div><div class="bm22-loading">3D МУЗЕЙ ІСКЕ ҚОСЫЛУДА…</div><div class="bm22-error"></div>`; 
  function showGallery(message){
   host.innerHTML='<div class="bm23-gallery"><div class="bm23-ceiling"></div><div class="bm23-wall"><div class="bm23-title"><small>BIR MURA · THE GREAT SILK ROAD</small><b id="bm23Title">GRAND CULTURAL HERITAGE GALLERY</b><span id="bm23Country">SILK ROAD COLLECTION</span></div></div><div class="bm23-col left"></div><div class="bm23-col right"></div><div class="bm23-floor"></div><div class="bm23-lamp l1"></div><div class="bm23-lamp l2"></div><div class="bm23-lamp l3"></div><button class="bm23-case c1" data-i="0"><i>◈</i><b id="bm23a">CERAMIC VESSEL</b><small>01 · EXHIBIT</small></button><button class="bm23-case c2" data-i="1"><i>✥</i><b id="bm23b">ORNAMENTAL ART</b><small>02 · EXHIBIT</small></button><button class="bm23-case c3" data-i="2"><i>⌑</i><b id="bm23c">SILK ROAD OBJECT</b><small>03 · EXHIBIT</small></button><div class="bm23-floorword">BIR MURA ✦ CULTURAL HERITAGE</div><div class="bm23-message">'+String(message||'WebGL қолжетімсіз — резервтік музей көрінісі').replace(/[<>]/g,'')+'</div></div>';
   const title=document.getElementById('roomCountryTitle');if(title)host.querySelector('#bm23Country').textContent=title.textContent;
@@ -2402,13 +2492,41 @@ const t=$('#map3dToggle'),area=$('.map-area');if(t&&area)t.addEventListener('cli
  function lookAt(eye,center,up){const z=norm(sub(eye,center)),x=norm(cross(up,z)),y=cross(z,x);return [x[0],y[0],z[0],0,x[1],y[1],z[1],0,x[2],y[2],z[2],0,-(x[0]*eye[0]+x[1]*eye[1]+x[2]*eye[2]),-(y[0]*eye[0]+y[1]*eye[1]+y[2]*eye[2]),-(z[0]*eye[0]+z[1]*eye[1]+z[2]*eye[2]),1]}
  function mul(a,b){const o=new Array(16);for(let r=0;r<4;r++)for(let c=0;c<4;c++)o[c*4+r]=a[r]*b[c*4]+a[4+r]*b[c*4+1]+a[8+r]*b[c*4+2]+a[12+r]*b[c*4+3];return o}
  let yaw=0,pitch=.12,dist=17,drag=false,lx=0,ly=0;
+ let walkMode=false,walkX=0,walkZ=7.5;
+ const heldKeys=new Set(),heldMoves=new Set();
+ const walkToggle=host.querySelector('#bmWalkToggle'),walkPad=host.querySelector('#bmWalkPad'),walkTip=host.querySelector('#bmWalkTip'),walkHelp=host.querySelector('#bm22Help');
+ function setWalkMode(on){
+  walkMode=!!on;room.classList.toggle('walk-mode',walkMode);
+  walkToggle.classList.toggle('active',walkMode);
+  walkToggle.textContent=walkMode?'↩ КӨРІНІСТІ АУЫСТЫРУ':'🚶 МУЗЕЙДІ АРАЛАУ';
+  if(walkTip)walkTip.textContent=walkMode?'W A S D · ҚОЗҒАЛУ | ТІНТУІРМЕН БҰРУ':'';
+  if(walkHelp)walkHelp.textContent=walkMode?'WASD / БАҒЫТТАУ ТҮЙМЕЛЕРІ · МУЗЕЙДІ АРАЛАУ':'ЗАЛДЫ СҮЙРЕТІП БҰРЫҢЫЗ · ДӨҢГЕЛЕКПЕН ЖАҚЫНДАТЫҢЫЗ';
+ }
+ walkToggle.addEventListener('click',()=>setWalkMode(!walkMode));
  const resize=()=>{const r=host.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,1.6);canvas.width=Math.max(1,Math.floor(r.width*dpr));canvas.height=Math.max(1,Math.floor(r.height*dpr));gl.viewport(0,0,canvas.width,canvas.height)};
- new ResizeObserver(resize).observe(host);resize();
+ if(window.ResizeObserver)new ResizeObserver(resize).observe(host);window.addEventListener('resize',resize);window.addEventListener('orientationchange',()=>setTimeout(resize,180));requestAnimationFrame(resize);resize();
  canvas.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;ly=e.clientY;canvas.setPointerCapture(e.pointerId)});
- canvas.addEventListener('pointermove',e=>{if(!drag)return;yaw-=(e.clientX-lx)*.006;pitch=Math.max(-.15,Math.min(.55,pitch+(e.clientY-ly)*.004));lx=e.clientX;ly=e.clientY});
+ canvas.addEventListener('pointermove',e=>{if(!drag)return;yaw-=(e.clientX-lx)*.006;pitch=Math.max(-.38,Math.min(.55,pitch+(e.clientY-ly)*.004));lx=e.clientX;ly=e.clientY});
  canvas.addEventListener('pointerup',()=>drag=false);canvas.addEventListener('pointercancel',()=>drag=false);
- canvas.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(10,Math.min(25,dist+e.deltaY*.018))},{passive:false});
- canvas.addEventListener('click',e=>{const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)/r.width;const idx=x<.39?0:x<.65?1:2;document.querySelector('.museum-vitrine[data-artifact="'+idx+'"]')?.click()});
+ canvas.addEventListener('wheel',e=>{e.preventDefault();if(walkMode){walkZ=Math.max(-5,Math.min(9,walkZ+Math.sign(e.deltaY)*.55));}else{dist=Math.max(10,Math.min(25,dist+e.deltaY*.018));}},{passive:false});
+ canvas.addEventListener('click',e=>{if(walkMode)return;const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)/r.width;const idx=x<.39?0:x<.65?1:2;document.querySelector('.museum-vitrine[data-artifact="'+idx+'"]')?.click()});
+ window.addEventListener('keydown',e=>{if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code)){heldKeys.add(e.code);if(walkMode)e.preventDefault();}});
+ window.addEventListener('keyup',e=>heldKeys.delete(e.code));
+ window.addEventListener('blur',()=>{heldKeys.clear();heldMoves.clear()});
+ host.querySelectorAll('.bm-walk-pad button').forEach(btn=>{
+  const key=btn.dataset.move;
+  btn.addEventListener('pointerdown',e=>{e.preventDefault();heldMoves.add(key);btn.setPointerCapture(e.pointerId)});
+  ['pointerup','pointercancel','lostpointercapture'].forEach(ev=>btn.addEventListener(ev,()=>heldMoves.delete(key)));
+ });
+ function moveWalk(){
+  if(!walkMode)return;
+  const forward=heldKeys.has('KeyW')||heldKeys.has('ArrowUp')||heldMoves.has('forward');
+  const back=heldKeys.has('KeyS')||heldKeys.has('ArrowDown')||heldMoves.has('back');
+  const left=heldKeys.has('KeyA')||heldKeys.has('ArrowLeft')||heldMoves.has('left');
+  const right=heldKeys.has('KeyD')||heldKeys.has('ArrowRight')||heldMoves.has('right');
+  let dx=(right?1:0)-(left?1:0),dz=(back?1:0)-(forward?1:0);
+  if(dx||dz){const len=Math.hypot(dx,dz);dx/=len;dz/=len;const speed=.105,fx=Math.sin(yaw),fz=-Math.cos(yaw);walkX+= (dx*Math.cos(yaw)+dz*fx)*speed;walkZ+= (dx*Math.sin(yaw)+dz*fz)*speed;walkX=Math.max(-7.2,Math.min(7.2,walkX));walkZ=Math.max(-7.5,Math.min(9,walkZ));}
+ }
 
  const realCollections={
  kz:{title:'ҚАЗАҚСТАН · ОТЫРАР БҰРЫШЫ',sub:'Отырар оазисі · ортағасырлық қала қолөнері',items:[
@@ -2469,12 +2587,18 @@ const t=$('#map3dToggle'),area=$('.map-area');if(t&&area)t.addEventListener('cli
  host.querySelectorAll('.bm22-caption-row button').forEach(btn=>btn.addEventListener('click',()=>document.querySelector('.museum-vitrine[data-artifact="'+btn.dataset.exhibit+'"]')?.click()));
  function updateHud(){host.querySelector('#bm22Country').textContent=country?.textContent||'SILK ROAD COLLECTION'}
  const mo=new MutationObserver(updateHud);if(country)mo.observe(country,{childList:true,subtree:true,characterData:true});names.forEach(id=>{const n=document.getElementById(id);if(n)mo.observe(n,{childList:true,subtree:true,characterData:true})});updateHud();renderRealCorner('kz');
- gl.enable(gl.DEPTH_TEST);gl.enable(gl.CULL_FACE);gl.cullFace(gl.BACK);gl.clearColor(.025,.07,.075,1);
+ gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.clearColor(.018,.052,.056,1);
  function render(){requestAnimationFrame(render);const w=canvas.width,h=canvas.height;if(!w||!h)return;
-  const eye=[Math.sin(yaw)*dist,4+Math.sin(pitch)*dist*.5,Math.cos(yaw)*dist-1.5],view=lookAt(eye,[0,2.7,-1.6],[0,1,0]),proj=perspective(Math.PI/3,w/h,.1,80),mvp=mul(proj,view);
+  moveWalk();
+  let eye,center;
+  if(walkMode){eye=[walkX,1.72,walkZ];center=[walkX+Math.sin(yaw)*Math.cos(pitch),1.72+Math.sin(pitch),walkZ-Math.cos(yaw)*Math.cos(pitch)];}
+  else{eye=[Math.sin(yaw)*dist,4+Math.sin(pitch)*dist*.5,Math.cos(yaw)*dist-1.5];center=[0,2.7,-1.6];}
+  const view=lookAt(eye,center,[0,1,0]),proj=perspective(Math.PI/3,w/h,.1,80),mvp=mul(proj,view);
   gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.uniformMatrix4fv(loc.mvp,false,new Float32Array(mvp));gl.uniformMatrix4fv(loc.model,false,new Float32Array([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]));
   gl.drawArrays(gl.TRIANGLES,0,count);
  }
+ if(!count)throw Error('3D геометрия жүктелмеді');
+ canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();showGallery('3D графика уақытша тоқтады · бетті қайта жүктеңіз')},{once:true});
  loading.style.display='none';render();
  }catch(err){console.error('BIR MURA WebGL:',err);showGallery('3D іске қосылмады · резервтік музей көрінісі');}
 })();
